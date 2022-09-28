@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Kyiv Type Titling";
+    src: url("../fonts/KyivTypeTitling-VarGX.ttf");
+}
+
+.search {
+    margin: 0 0 0 auto;
+	border: 4px solid #444444;
+	background: #444444;
+	padding: 1px;
+	border-radius: 20px 20px 20px 20px;
+    width: 200px;
+}
+
+#search_text {
+	background: #444444;
+	border: 0;
+	outline: none;
+    color: white;
+}
+
+.search_result {
+    text-align: center;
+}
+
+.search button {
+	background: #333333;
+	border: 1px;
+	padding: 2px;
+	border-radius: 50px 50px 50px 50px;
+}
+
+.table {
+    display:table;
+    max-width: 1600px;
+    border: none;
+    border-spacing: 1vw;
+    border-collapse: separate;
+    margin: auto;
+    word-wrap: break-word;
+    word-break: break-all; 
+}
+
+.table_tr {
+    display: table-row;
+}
+
+.table_th, .table_td {
+    display: table-cell;
+}
+
+.table_th_for_td {
+    display: none;
+}
+
+.table_th, .table_th_for_td {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: animate_gradient 5s ease infinite;
+}
+
+@keyframes animate_gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.table_th, .table_th_for_td, .table_td {
+    width: auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.table_td {
+    background-color: gray;
+    transition: .7s;
+}
+
+.table_td:hover {
+    background: #81bfaa;
+    -webkit-transform: scale(1.1);
+    -ms-ransform: scale(1.1);
+    transform: scale(1.1);
+}
+
+h3 {
+    font-family: "Kyiv Type Titling";
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+h3:after {
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+h3:hover:after, h3:focus:after {
+    width: 100%;
+}
+
+p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 420px) {
+    .table {
+        display: block;
+    }
+    
+    .table_th {
+        display: none;
+    }
+
+    .table_th_for_td, .table_td, .table_tr {
+		display: block;
+        margin: 5px;
+	}
+
+    h3 {
+        font-size: 8vw;
+    }
+
+    p {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 1600px) {
+    .table {
+        border-spacing: 1vw;
+    }
+    
+    .table_tr {
+        display: table-row;
+    }
+    
+    .table_th, .table_td {
+        display: table-cell;
+    }
+
+    .table_th_for_td {
+		display: none;
+	}
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+}

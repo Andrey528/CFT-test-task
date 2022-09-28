@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="search">
+            <input type="text" id="search_text" placeholder="Я ищу...">
+            <button type="submit" id="search_button" onclick="searchInTable()">&#128269</button>
+        </div>
+        <div class="search_result"></div>
+        <div class="table">
+            <div class="table_tr">
+                <div class="table_th">
+                    <h3>Заголовок 1</h3>
+                </div>
+                <div class="table_th">
+                    <h3>Заголовок 2</h3>
+                </div>
+                <div class="table_th">
+                    <h3>Заголовок 3</h3>
+                </div>
+                <div class="table_th">
+                    <h3>Заголовок 4</h3>
+                </div>
+                <div class="table_th">
+                    <h3>Заголовок 5</h3>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_th_for_td">
+                    <h3>Заголовок 1</h3>    
+                </div>
+                <div class="table_td td_col_1">
+                    <p>Ячейка 1</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 2</h3>
+                </div>
+                <div class="table_td td_col_2">
+                    <p>Ячейка 2</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 3</h3>
+                </div>
+                <div class="table_td td_col_3">
+                    <p>Ячейка 3</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 4</h3>
+                </div>
+                <div class="table_td td_col_4">
+                    <p>Ячейка 4</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 5</h3>
+                </div>
+                <div class="table_td td_col_5">
+                    <p>Ячейка 5</p>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_th_for_td">
+                    <h3>Заголовок 1</h3>    
+                </div>
+                <div class="table_td td_col_1">
+                    <p>Ячейка 6</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 2</h3>
+                </div>
+                <div class="table_td td_col_2">
+                    <p>Ячейка 7</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 3</h3>
+                </div>
+                <div class="table_td td_col_3">
+                    <p>Ячейка 8</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 4</h3>
+                </div>
+                <div class="table_td td_col_4">
+                    <p>Ячейка 9</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 5</h3>
+                </div>
+                <div class="table_td td_col_5">
+                    <p>Ячейка 10</p>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_th_for_td">
+                    <h3>Заголовок 1</h3>
+                </div>
+                <div class="table_td td_col_1">
+                    <p>Ячейка 11</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 2</h3>
+                </div>
+                <div class="table_td td_col_2">
+                    <p>Ячейка 12</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 3</h3>
+                </div>
+                <div class="table_td td_col_3">
+                    <p>Ячейка 13</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 4</h3>
+                </div>
+                <div class="table_td td_col_4">
+                    <p>Ячейка 14</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 5</h3>
+                </div>
+                <div class="table_td td_col_5">
+                    <p>Ячейка 15</p>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_th_for_td">
+                    <h3>Заголовок 1</h3>
+                </div>
+                <div class="table_td td_col_1">
+                    <p>Ячейка 16</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 2</h3>    
+                </div>
+                <div class="table_td td_col_2">
+                    <p>Ячейка 17</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 3</h3>
+                </div>
+                <div class="table_td td_col_3">
+                    <p>Ячейка 18</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 4</h3>
+                </div>
+                <div class="table_td td_col_4">
+                    <p>Ячейка 19</p>
+                </div>
+                <div class="table_th_for_td">
+                    <h3>Заголовок 5</h3>
+                </div>
+                <div class="table_td td_col_5">
+                    <p>Ячейка 20</p>
+                </div>
+            </div>
+        </div>
+        <script src="./js/search_func.js"></script>
+    </body>
+</html>
